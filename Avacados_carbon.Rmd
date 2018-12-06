@@ -1,0 +1,21 @@
+---
+title: "Avocados_and_carbon"
+author: "Tempest McCabe"
+date: "11/29/2018"
+output: html_document
+---
+
+Humans put 7.8 Pg +- 0.6 of Carbon into the atmosphere through fossil fuel burning (IPCC Chapter 6 figure 6.1). An [Avocado is about 215 grams](http://www.avocadosource.com/CAS_Yearbooks/CAS_68_1984/CAS_1984_PG_109-119.pdf) (including the seed + the skin). So 7.8 Pg +- 0.6 is about 7800000000000000 g +- 600000000000000 g. 
+
+[Surface area of the moon citation](https://www.universetoday.com/20489/moon-compared-to-earth/)
+
+```{r}
+number_of_avacados <- 7800000000000000/215 
+
+surface_area_of_moon <- 3790000 #km^2
+surface_area_of_moon <- 3.79e+12 #m^2
+number_of_avacados_per_meter_sq <- number_of_avacados/ surface_area_of_moon
+number_of_avacados_per_meter_sq
+
+```
+
