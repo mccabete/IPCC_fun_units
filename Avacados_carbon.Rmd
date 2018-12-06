@@ -9,7 +9,8 @@ Humans put 7.8 Pg +- 0.6 of Carbon into the atmosphere through fossil fuel burni
 
 [Surface area of the moon citation](https://www.universetoday.com/20489/moon-compared-to-earth/)
 
-```{r}
+```{r, echo = TRUE}
+
 number_of_avacados <- 7800000000000000/215 
 
 surface_area_of_moon <- 3790000 #km^2
@@ -18,4 +19,32 @@ number_of_avacados_per_meter_sq <- number_of_avacados/ surface_area_of_moon
 number_of_avacados_per_meter_sq
 
 ```
+
+## Energy Trapped in the atmosphere
+
+
+ Humans-manufactured gasses are trapping double the amount of energy every second in the atmosphere than before the industrial revolution (IPCC AR5: figure 1.4). That means that humans have caused the earth to trap enough additional energy every minute to boil all the tea drunk in Britain for 21 years. 
+
+The british consume about 60 billion cups of tea per year. 
+http://www.bbc.com/future/story/20160602-why-do-the-british-love-the-taste-of-tea-so-much
+https://www.teaguardian.com/about/standards/measurements/
+
+
+And A cup of tea is about 150 ml.  150 ml is 150 g and the specific heat of water is 4.186 joules/g  per degree celsius. Room temperature is 23 degrees C, boiling is 100 degrees C. So, we need to raise the temperature by 77 degrees. We are not boiling the water off, so we don’t need to account for the energy to convert the water to steam. Let’s assume standard atmospheric pressure. So the amount of energy to make all the tea in Britain for a year is 
+150 g * 77 degrees C * 4.186joule/gram °C * 60 * 10^9 = 2.9*10^15 Joules
+
+```{r}
+brittish_tea <- 150 * 77* 4.186 * 60 *10^9 #Joules per year
+brittish_tea
+global_difference_in_watts <-  2.3 * 510.1 * 10^12 # watts
+global_difference_in_watts
+
+global_difference_in_Joules_per_min <- global_difference_in_watts * 60 #joules
+
+years_of_tea <- global_difference_in_Joules_per_min / brittish_tea
+
+years_of_tea
+```
+
+Relative to 1750, we increased our Watts/m^2 by 2.3. The Surface area of the earth is 510.1 * 10^12 m², so we trap 2.3 * 510.1 * 10^12 = 1.02e+15 Watts globally. That means that every minute we trap 6.12e+16 Joules, which could boil all the tea in Britain for over 24 years. 
 
