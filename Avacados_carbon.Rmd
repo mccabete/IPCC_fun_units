@@ -46,5 +46,5 @@ years_of_tea <- global_difference_in_Joules_per_min / brittish_tea
 years_of_tea
 ```
 
-Relative to 1750, we increased our Watts/m^2 by 2.3. The Surface area of the earth is 510.1 * 10^12 m², so we trap 2.3 * 510.1 * 10^12 = 1.02e+15 Watts globally. That means that every minute we trap 6.12e+16 Joules, which could boil all the tea in Britain for over 24 years. 
+Relative to 1750, we increased our Watts/m^2 by 2.3. The Surface area of the earth is 510.1 * 10^12 m², so we trap 2.3 * 510.1 * 10^12 = 1.17e+15 Watts globally. That means that every minute we trap 7.04e+16 Joules, which could boil all the tea in Britain for over 24 years. 
 
